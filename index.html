@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mashka Box</title>
+
+    <link rel="stylesheet" href="estilocss/estilos.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Mashka Box</h1>
+        <p>Entrena fuerte. Vive mejor.</p>
+        
+        <input type="checkbox" id="btn-menu">
+  
+          <label for="btn-menu" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        
+        <nav>
+          <a href="#inicio">Inicio</a>
+          <a href="#beneficios">Características</a>
+          <a href="#planes">Precios</a>
+          <a href="#contacto">Contacto</a>
+          <a href="#ubicacion">Ubicación</a>
+        </nav>
+      </header>
+
+      <!-- INICIO / QUIENES -->
+      <section class="quienes">
+        <div>
+          <h2>¿Quiénes somos?</h2>
+          <p>Somos un centro de entrenamiento enfocado en mejorar tu salud física y mental.</p>
+        </div>
+        <div class="box">
+          <img src="imagenes/quienesomos.jpg" alt="Quiénes somos" />
+        </div>
+      </section>
+
+      <!-- BENEFICIOS -->
+      <section>
+        <h2>Características y beneficios</h2>
+
+        <div class="beneficios">
+          <div class="beneficio-item">
+            <div class="box">
+              <img src="imagenes/g1.jpg" alt="Variedad de equipos" />
+            </div>
+            <p>Variedad de Equipos</p>
+          </div>
+
+          <div class="beneficio-item beneficio-wide">
+            <div class="box">
+              <img src="imagenes/ejeradapta.jpg" alt="Ejercicios adaptativos" />
+            </div>
+            <p>Ejercicios adaptativos</p>
+          </div>
+
+          <div class="beneficio-item">
+            <div class="box">
+              <img src="imagenes/aptoedades.jpg" alt="Apto para todas las edades" />
+            </div>
+            <p>Apto para todas las edades</p>
+          </div>
+        </div>
+        <h2>Galería</h2>
+        <div class="media-row">
+          <div class="video box">
+            <div class="video-frame">
+              <iframe
+                src="https://youtube.com/embed/x5rnxq34gEo?playlist=x5rnxq34gEo&loop=1&autoplay=1"
+                title="Video gimnasio"
+                frameborder="0"
+                allow="accelerometer; encrypted-media; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="gallery gallery-col">
+            <div class="box gallery-item">
+              <img src="imagenes/aptoedades.jpg" alt="Galería" />
+            </div>
+          </div>
+
+          <div class="gallery gallery-col">
+            <div class="box gallery-item">
+              <img src="imagenes/g2.jpg" alt="Galería (2)" />
+            </div>
+          </div>
+
+          <div class="gallery gallery-col">
+            <div class="box gallery-item">
+              <img src="imagenes/g1.jpg" alt="Galería (3)" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PLANES -->
+      <section id="planes">
+        <h2>Planes</h2>
+
+        <div class="planes">
+          <div class="plan-card">
+            <h3>Plan Grupal</h3>
+            <p class="plan-price">$30</p>
+            <ul class="plan-features">
+              <li>Entrenamiento en grupo</li>
+              <li>Ambiente motivador</li>
+              <li>Acceso a equipos</li>
+            </ul>
+            <a class="plan-cta" href="#contacto">Elegir plan</a>
+          </div>
+
+          <div class="plan-card">
+            <h3>Plan Estudiante</h3>
+            <p class="plan-price">$30/mes</p>
+            <ul class="plan-features">
+              <li>Tarifa preferencial</li>
+              <li>Rutinas guiadas</li>
+              <li>Acceso a equipos</li>
+            </ul>
+            <a class="plan-cta" href="#contacto">Elegir plan</a>
+          </div>
+
+          <div class="plan-card">
+            <h3>Plan Mensual</h3>
+            <p class="plan-price">$35/mes</p>
+            <ul class="plan-features">
+              <li>Acceso completo</li>
+              <li>Flexibilidad de horarios</li>
+              <li>Progreso mensual</li>
+            </ul>
+            <a class="plan-cta" href="#contacto">Elegir plan</a>
+          </div>
+
+          <div class="plan-card">
+            <h3>Plan Trimestral</h3>
+            <p class="plan-price">$95</p>
+            <ul class="plan-features">
+              <li>Mejor precio por mes</li>
+              <li>Constancia asegurada</li>
+              <li>Seguimiento de progreso</li>
+            </ul>
+            <a class="plan-cta" href="#contacto">Elegir plan</a>
+          </div>
+
+          <div class="plan-card">
+            <h3>Plan Semestral</h3>
+            <p class="plan-price">$50/mes</p>
+            <ul class="plan-features">
+              <li>Compromiso a largo plazo</li>
+              <li>Mejoras visibles</li>
+              <li>Entrena con constancia</li>
+            </ul>
+            <a class="plan-cta" href="#contacto">Elegir plan</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- UBICACION -->
+      <section id="ubicacion" class="ubicacion">
+        <div class="mapa box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.65939581694573!2d-78.61176619587955!3d-0.945425716447975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d461636565889b%3A0x390a2c8fd01dcfa2!2sMashka%20Box%20Training%20Club!5e0!3m2!1sen!2sus!4v1777003490081!5m2!1sen!2sus"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <div class="info">
+          <h2>Ubicación</h2>
+          <p>📍 Av. Unidad Nacional y Manuelita Sáenz</p>
+          <p>Latacunga - Ecuador</p>
+        </div>
+      </section>
+
+      <!-- HORARIOS -->
+      <section>
+        <h2>Horarios</h2>
+
+        <div class="horarios">
+          <h3>Lunes a Viernes</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Mañana</th>
+                <th>Tarde</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>05:00 - 08:00</td>
+                <td>16:00 - 20:00</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Sábado</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td>09:00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto">
+        <h2>Contacto</h2>
+
+        <div class="chat">
+          <div class="formulario">
+            <form id="contactForm" class="formulario" action="registro.php" method="POST">
+              <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
+              <input type="email" id="correo" name="correo" placeholder="Correo" required />
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                placeholder="Tu mensaje aquí..."
+                rows="4"
+              ></textarea>
+              <button type="submit" id="btnEnviar">Enviar mensaje</button>
+            </form>
+          </div>
+
+          <div class="chatbox">
+            <img src="imagenes/contacto.jpeg" alt="Contacto" />
+          </div>
+        </div>
+      </section>
+
+      <!-- REDES -->
+      <section>
+        <h2>Redes Sociales</h2>
+
+        <div class="redes">
+          <div>
+            <a href="https://www.facebook.com/mashkabox/" target="_blank" rel="noopener noreferrer">
+              <img src="imagenes/facebook.png" alt="Facebook" />
+              <p>Facebook</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="https://www.instagram.com/mashkabox/" target="_blank" rel="noopener noreferrer">
+              <img src="imagenes/instagram.webp" alt="Instagram" />
+              <p>Instagram</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="https://wa.me/523983421877" target="_blank" rel="noopener noreferrer">
+              <img src="imagenes/WhatsApp.png" alt="WhatsApp" />
+              <p>WhatsApp</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
