@@ -5,31 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mashka Box</title>
 
-    <link rel="stylesheet" href="estilocss/estilos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
 
   <body>
-    <div class="container">
-      <header>
-        <h1>Mashka Box</h1>
-        <p>Entrena fuerte. Vive mejor.</p>
-        
-        <input type="checkbox" id="btn-menu">
-  
-          <label for="btn-menu" class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        
-        <nav>
-          <a href="#inicio">Inicio</a>
-          <a href="#beneficios">Características</a>
-          <a href="#planes">Precios</a>
-          <a href="#contacto">Contacto</a>
-          <a href="#ubicacion">Ubicación</a>
+    <div class="container bg-white px-0 shadow-sm">
+      <header class="bg-light border-bottom sticky-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+          <div class="container-fluid px-0">
+            <div class="d-flex flex-column">
+              <a class="navbar-brand fs-2 fw-bold text-dark text-uppercase m-0" href="#inicio">
+                Mashka Box
+              </a>
+              <small class="text-muted d-none d-sm-block font-monospace">Entrena fuerte. Vive mejor.</small>
+            </div>
+            
+            
+            </div>
+          </div>
         </nav>
-      </header>
+      </div>
+    </header>
 
       <!-- INICIO / QUIENES -->
       <section class="quienes">
@@ -269,5 +266,6 @@
         </div>
       </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
