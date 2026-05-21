@@ -222,31 +222,31 @@
 
         <div class="chat">
           <div class="formulario">
-            <form id="contactForm" class="formulario" action="registro.php" method="POST">
+  <form id="contactForm" class="formulario" action="registro.php" method="POST">
 
-           <label for="nombre">Nombre</label>
-           <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required />
+  <h3>Envíanos un mensaje</h3>
 
-          <label for="correo">Correo</label>
-          <input type="email" id="correo" name="correo" placeholder="ejemplo@gmail.com" required />
+  <input type="text" id="nombre" name="nombre" placeholder="👤 Nombre completo" required />
 
-          <label for="telefono">Teléfono</label>
-          <input type="tel" id="telefono" name="telefono" placeholder="0999999999" required />
+  <input type="email" id="correo" name="correo" placeholder="📧 Correo electrónico" required />
 
-          <label for="mensaje">Mensaje</label>
-          <textarea
-            id="mensaje"
-            name="mensaje"
-            placeholder="Escribe tu mensaje..."
-            rows="4"
-            required
-          ></textarea>
+  <input type="tel" id="telefono" name="telefono" placeholder="📱 Teléfono" required />
 
-          <button type="submit" id="btnEnviar">Enviar mensaje</button>
+  <textarea
+    id="mensaje"
+    name="mensaje"
+    placeholder="✍️ Escribe tu mensaje aquí..."
+    rows="5"
+    required
+  ></textarea>
 
-          </form>
-           
-          </div>
+  <button type="submit" id="btnEnviar">
+    Enviar mensaje
+  </button>
+
+</form>
+      
+       </div>
 
           <div class="chatbox">
             <img src="imagenes/contacto.jpeg" alt="Contacto" />
@@ -257,29 +257,35 @@
       <!-- REDES -->
       <section>
         <h2>Redes Sociales</h2>
-
         <div class="redes">
-          <div>
-            <a href="https://www.facebook.com/mashkabox/" target="_blank" rel="noopener noreferrer">
-              <img src="imagenes/facebook.png" alt="Facebook" />
-              <p>Facebook</p>
-            </a>
-          </div>
 
-          <div>
-            <a href="https://www.instagram.com/mashkabox/" target="_blank" rel="noopener noreferrer">
-              <img src="imagenes/instagram.webp" alt="Instagram" />
-              <p>Instagram</p>
-            </a>
-          </div>
+  <div>
+    <a href="https://www.facebook.com/mashkabox/" target="_blank">
+      <img src="imagenes/facebook.png" alt="Facebook" width="70" />
+      <h3>Facebook</h3>
+      <p>Síguenos para novedades</p>
+    </a>
+  </div>
 
-          <div>
-            <a href="https://wa.me/523983421877" target="_blank" rel="noopener noreferrer">
-              <img src="imagenes/WhatsApp.png" alt="WhatsApp" />
-              <p>WhatsApp</p>
-            </a>
-          </div>
-        </div>
+  <div>
+    <a href="https://www.instagram.com/mashkabox/" target="_blank">
+      <img src="imagenes/instagram.webp" alt="Instagram" width="70" />
+      <h3>Instagram</h3>
+      <p>Contenido y entrenamientos</p>
+    </a>
+  </div>
+
+  <div>
+    <a href="https://wa.me/523983421877" target="_blank">
+      <img src="imagenes/WhatsApp.png" alt="WhatsApp" width="70" />
+      <h3>WhatsApp</h3>
+      <p>Contáctanos directamente</p>
+    </a>
+  </div>
+
+</div>
+
+        
       </section>
     </div>
   </body>
