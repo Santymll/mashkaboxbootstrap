@@ -5,22 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mashka Box</title>
 
+    <!-- Enlace CDN de Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos personalizados del proyecto -->
     <link rel="stylesheet" href="estilocss/estilos.css" />
   </head>
 
   <body>
-    <div class="container">
-      <header>
+    <div class="container-fluid p-0">
+      
+      <!-- ========================================== -->
+      <!-- SECCIÓN COMPAÑERO 1: NAVBAR Y BIENVENIDA   -->
+      <!-- ========================================== -->
+      <header class="container">
         <h1>Mashka Box</h1>
         <p>Entrena fuerte. Vive mejor.</p>
         
         <input type="checkbox" id="btn-menu">
-  
-          <label for="btn-menu" class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
+        <label for="btn-menu" class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
         
         <nav>
           <a href="#inicio">Inicio</a>
@@ -31,8 +38,7 @@
         </nav>
       </header>
 
-      <!-- INICIO / QUIENES -->
-      <section class="quienes">
+      <section class="quienes container">
         <div>
           <h2>¿Quiénes somos?</h2>
           <p>Somos un centro de entrenamiento enfocado en mejorar tu salud física y mental.</p>
@@ -42,130 +48,199 @@
         </div>
       </section>
 
-      <!-- BENEFICIOS -->
-      <section>
-        <h2>Características y beneficios</h2>
 
-        <div class="beneficios">
-          <div class="beneficio-item">
-            <div class="box">
-              <img src="imagenes/g1.jpg" alt="Variedad de equipos" />
-            </div>
-            <p>Variedad de Equipos</p>
-          </div>
+      <!-- ========================================== -->
+      <!-- YO: DESDE BENEFICIOS HASTA PLANES  -->
+      <!-- ========================================== -->
 
-          <div class="beneficio-item beneficio-wide">
-            <div class="box">
-              <img src="imagenes/ejeradapta.jpg" alt="Ejercicios adaptativos" />
-            </div>
-            <p>Ejercicios adaptativos</p>
-          </div>
-
-          <div class="beneficio-item">
-            <div class="box">
-              <img src="imagenes/aptoedades.jpg" alt="Apto para todas las edades" />
-            </div>
-            <p>Apto para todas las edades</p>
-          </div>
-        </div>
-        <h2>Galería</h2>
-        <div class="media-row">
-          <div class="video box">
-            <div class="video-frame">
-              <iframe
-                src="https://youtube.com/embed/x5rnxq34gEo?playlist=x5rnxq34gEo&loop=1&autoplay=1"
-                title="Video gimnasio"
-                frameborder="0"
-                allow="accelerometer; encrypted-media; web-share"
-                allowfullscreen
-              ></iframe>
+      <!-- 1. CARACTERÍSTICAS Y BENEFICIOS -->
+      <section id="beneficios" class="container my-5 py-4">
+        <h2 class="text-center mb-5 fw-bold text-uppercase tracking-wide">Características y beneficios</h2>
+        
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+          <!-- Tarjeta 1: Variedad de Equipos -->
+          <div class="col">
+            <div class="card h-100 shadow border-0 overflow-hidden">
+              <div style="height: 240px;">
+                <img src="imagenes/g1.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Variedad de equipos" />
+              </div>
+              <div class="card-body bg-dark text-white text-center d-flex align-items-center justify-content-center">
+                <h5 class="card-title m-0 fw-bold">Variedad de Equipos</h5>
+              </div>
             </div>
           </div>
 
-          <div class="gallery gallery-col">
-            <div class="box gallery-item">
-              <img src="imagenes/aptoedades.jpg" alt="Galería" />
+          <!-- Tarjeta 2: Ejercicios adaptativos -->
+          <div class="col">
+            <div class="card h-100 shadow border-0 overflow-hidden">
+              <div style="height: 240px;">
+                <img src="imagenes/ejeradapta.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Ejercicios adaptativos" />
+              </div>
+              <div class="card-body bg-dark text-white text-center d-flex align-items-center justify-content-center">
+                <h5 class="card-title m-0 fw-bold">Ejercicios adaptativos</h5>
+              </div>
             </div>
           </div>
 
-          <div class="gallery gallery-col">
-            <div class="box gallery-item">
-              <img src="imagenes/g2.jpg" alt="Galería (2)" />
-            </div>
-          </div>
-
-          <div class="gallery gallery-col">
-            <div class="box gallery-item">
-              <img src="imagenes/g1.jpg" alt="Galería (3)" />
+          <!-- Tarjeta 3: Apto para todas las edades -->
+          <div class="col">
+            <div class="card h-100 shadow border-0 overflow-hidden">
+              <div style="height: 240px;">
+                <img src="imagenes/aptoedades.jpg" class="img-fluid h-100 w-100 object-fit-cover" alt="Apto para todas las edades" />
+              </div>
+              <div class="card-body bg-dark text-white text-center d-flex align-items-center justify-content-center">
+                <h5 class="card-title m-0 fw-bold">Apto para todas las edades</h5>
+              </div>
             </div>
           </div>
         </div>
-      </section>
 
-      <!-- PLANES -->
-      <section id="planes">
-        <h2>Planes</h2>
-
-        <div class="planes">
-          <div class="plan-card">
-            <h3>Plan Grupal</h3>
-            <p class="plan-price">$30</p>
-            <ul class="plan-features">
-              <li>Entrenamiento en grupo</li>
-              <li>Ambiente motivador</li>
-              <li>Acceso a equipos</li>
-            </ul>
-            <a class="plan-cta" href="#contacto">Elegir plan</a>
+        <!-- 2. GALERÍA Y VIDEO -->
+        <h2 class="text-center mb-5 fw-bold text-uppercase tracking-wide">Galería del Box</h2>
+        <div class="row g-4">
+          
+          <!-- Columna Izquierda: Video (Ocupa el 50% en pantallas grandes) -->
+          <div class="col-12 col-lg-6">
+            <div class="card h-100 shadow border-0 overflow-hidden">
+              <div class="ratio ratio-16x9 h-100">
+                <iframe
+                  src="https://youtube.com/embed/x5rnxq34gEo?playlist=x5rnxq34gEo&loop=1&autoplay=1"
+                  title="Video gimnasio"
+                  allow="accelerometer; encrypted-media; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
           </div>
 
-          <div class="plan-card">
-            <h3>Plan Estudiante</h3>
-            <p class="plan-price">$30/mes</p>
-            <ul class="plan-features">
-              <li>Tarifa preferencial</li>
-              <li>Rutinas guiadas</li>
-              <li>Acceso a equipos</li>
-            </ul>
-            <a class="plan-cta" href="#contacto">Elegir plan</a>
+          <!-- Columna Derecha: Bloque de imágenes adaptables -->
+          <div class="col-12 col-lg-6">
+            <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-1 g-3 h-100">
+              <div class="col">
+                <div class="card shadow border-0 overflow-hidden h-100">
+                  <img src="imagenes/aptoedades.jpg" class="img-fluid h-100 w-100 object-fit-cover" style="min-height: 140px; max-height: 150px;" alt="Galería 1" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow border-0 overflow-hidden h-100">
+                  <img src="imagenes/g2.jpg" class="img-fluid h-100 w-100 object-fit-cover" style="min-height: 140px; max-height: 150px;" alt="Galería 2" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow border-0 overflow-hidden h-100">
+                  <img src="imagenes/g1.jpg" class="img-fluid h-100 w-100 object-fit-cover" style="min-height: 140px; max-height: 150px;" alt="Galería 3" />
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="plan-card">
-            <h3>Plan Mensual</h3>
-            <p class="plan-price">$35/mes</p>
-            <ul class="plan-features">
-              <li>Acceso completo</li>
-              <li>Flexibilidad de horarios</li>
-              <li>Progreso mensual</li>
-            </ul>
-            <a class="plan-cta" href="#contacto">Elegir plan</a>
-          </div>
-
-          <div class="plan-card">
-            <h3>Plan Trimestral</h3>
-            <p class="plan-price">$95</p>
-            <ul class="plan-features">
-              <li>Mejor precio por mes</li>
-              <li>Constancia asegurada</li>
-              <li>Seguimiento de progreso</li>
-            </ul>
-            <a class="plan-cta" href="#contacto">Elegir plan</a>
-          </div>
-
-          <div class="plan-card">
-            <h3>Plan Semestral</h3>
-            <p class="plan-price">$50/mes</p>
-            <ul class="plan-features">
-              <li>Compromiso a largo plazo</li>
-              <li>Mejoras visibles</li>
-              <li>Entrena con constancia</li>
-            </ul>
-            <a class="plan-cta" href="#contacto">Elegir plan</a>
-          </div>
         </div>
       </section>
 
-      <!-- UBICACION -->
-      <section id="ubicacion" class="ubicacion">
+      <!-- 3. PLANES DE PRECIOS -->
+      <section id="planes" class="container my-5 py-4">
+        <h2 class="text-center mb-5 fw-bold text-uppercase tracking-wide">Nuestros Planes</h2>
+        
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+          
+          <!-- Plan Grupal -->
+          <div class="col">
+            <div class="card h-100 shadow border-0 text-center">
+              <div class="card-header bg-dark text-white py-3">
+                <h4 class="my-0 fw-normal">Plan Grupal</h4>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h1 class="card-title pricing-card-title fw-bold">$30 <small class="text-muted fw-light">/mes</small></h1>
+                <ul class="list-unstyled mt-3 mb-4 flex-grow-1">
+                  <li class="py-2 border-bottom">Entrenamiento en grupo</li>
+                  <li class="py-2 border-bottom">Ambiente motivador</li>
+                  <li class="py-2">Acceso a equipos</li>
+                </ul>
+                <a href="#contacto" class="btn btn-lg btn-outline-dark w-100 mt-auto">Elegir plan</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plan Estudiante -->
+          <div class="col">
+            <div class="card h-100 shadow border-primary border-2 text-center">
+              <div class="card-header bg-primary text-white py-3">
+                <h4 class="my-0 fw-bold">Plan Estudiante ⭐</h4>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h1 class="card-title pricing-card-title fw-bold">$30 <small class="text-muted fw-light">/mes</small></h1>
+                <ul class="list-unstyled mt-3 mb-4 flex-grow-1">
+                  <li class="py-2 border-bottom">Tarifa preferencial</li>
+                  <li class="py-2 border-bottom">Rutinas guiadas</li>
+                  <li class="py-2">Acceso a equipos</li>
+                </ul>
+                <a href="#contacto" class="btn btn-lg btn-primary w-100 mt-auto">Elegir plan</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plan Mensual -->
+          <div class="col">
+            <div class="card h-100 shadow border-0 text-center">
+              <div class="card-header bg-dark text-white py-3">
+                <h4 class="my-0 fw-normal">Plan Mensual</h4>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h1 class="card-title pricing-card-title fw-bold">$35 <small class="text-muted fw-light">/mes</small></h1>
+                <ul class="list-unstyled mt-3 mb-4 flex-grow-1">
+                  <li class="py-2 border-bottom">Acceso completo</li>
+                  <li class="py-2 border-bottom">Flexibilidad de horarios</li>
+                  <li class="py-2">Progreso mensual</li>
+                </ul>
+                <a href="#contacto" class="btn btn-lg btn-outline-dark w-100 mt-auto">Elegir plan</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plan Trimestral -->
+          <div class="col">
+            <div class="card h-100 shadow border-0 text-center">
+              <div class="card-header bg-dark text-white py-3">
+                <h4 class="my-0 fw-normal">Plan Trimestral</h4>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h1 class="card-title pricing-card-title fw-bold">$95 <small class="text-muted fw-light">/trimestre</small></h1>
+                <ul class="list-unstyled mt-3 mb-4 flex-grow-1">
+                  <li class="py-2 border-bottom">Mejor precio por mes</li>
+                  <li class="py-2 border-bottom">Constancia asegurada</li>
+                  <li class="py-2">Seguimiento de progreso</li>
+                </ul>
+                <a href="#contacto" class="btn btn-lg btn-outline-dark w-100 mt-auto">Elegir plan</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plan Semestral -->
+          <div class="col">
+            <div class="card h-100 shadow border-0 text-center">
+              <div class="card-header bg-dark text-white py-3">
+                <h4 class="my-0 fw-normal">Plan Semestral</h4>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h1 class="card-title pricing-card-title fw-bold">$150 <small class="text-muted fw-light">/mes</small></h1>
+                <ul class="list-unstyled mt-3 mb-4 flex-grow-1">
+                  <li class="py-2 border-bottom">Compromiso a largo plazo</li>
+                  <li class="py-2 border-bottom">Mejoras visibles</li>
+                  <li class="py-2">Entrena con constancia</li>
+                </ul>
+                <a href="#contacto" class="btn btn-lg btn-outline-dark w-100 mt-auto">Elegir plan</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- ========================================== -->
+      <!-- SECCIÓN COMPAÑERO 2: CONTACTO Y FOOTER     -->
+      <!-- ========================================== -->
+      <section id="ubicacion" class="ubicacion container">
         <div class="mapa box">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.65939581694573!2d-78.61176619587955!3d-0.945425716447975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d461636565889b%3A0x390a2c8fd01dcfa2!2sMashka%20Box%20Training%20Club!5e0!3m2!1sen!2sus!4v1777003490081!5m2!1sen!2sus"
@@ -184,10 +259,8 @@
         </div>
       </section>
 
-      <!-- HORARIOS -->
-      <section>
+      <section class="container">
         <h2>Horarios</h2>
-
         <div class="horarios">
           <h3>Lunes a Viernes</h3>
           <table>
@@ -204,7 +277,6 @@
               </tr>
             </tbody>
           </table>
-
           <h3>Sábado</h3>
           <table>
             <tbody>
@@ -216,35 +288,25 @@
         </div>
       </section>
 
-      <!-- CONTACTO -->
-      <section id="contacto">
+      <section id="contacto" class="container">
         <h2>Contacto</h2>
-
         <div class="chat">
           <div class="formulario">
             <form id="contactForm" class="formulario" action="registro.php" method="POST">
               <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
               <input type="email" id="correo" name="correo" placeholder="Correo" required />
-              <textarea
-                id="mensaje"
-                name="mensaje"
-                placeholder="Tu mensaje aquí..."
-                rows="4"
-              ></textarea>
+              <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje aquí..." rows="4"></textarea>
               <button type="submit" id="btnEnviar">Enviar mensaje</button>
             </form>
           </div>
-
           <div class="chatbox">
             <img src="imagenes/contacto.jpeg" alt="Contacto" />
           </div>
         </div>
       </section>
 
-      <!-- REDES -->
-      <section>
+      <section class="container mb-5">
         <h2>Redes Sociales</h2>
-
         <div class="redes">
           <div>
             <a href="https://www.facebook.com/mashkabox/" target="_blank" rel="noopener noreferrer">
@@ -252,14 +314,12 @@
               <p>Facebook</p>
             </a>
           </div>
-
           <div>
             <a href="https://www.instagram.com/mashkabox/" target="_blank" rel="noopener noreferrer">
               <img src="imagenes/instagram.webp" alt="Instagram" />
               <p>Instagram</p>
             </a>
           </div>
-
           <div>
             <a href="https://wa.me/523983421877" target="_blank" rel="noopener noreferrer">
               <img src="imagenes/WhatsApp.png" alt="WhatsApp" />
@@ -268,6 +328,10 @@
           </div>
         </div>
       </section>
+
     </div>
+
+    <!-- Enlace CDN de Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
