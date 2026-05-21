@@ -217,63 +217,67 @@
       </section>
 
 <!-- CONTACTO -->
-<section id="contacto">
-  <h2>Contacto</h2>
+<section id="contacto" class="container mt-5">
 
-  <div class="chat">
+  <h2 class="text-center mb-4">Contacto</h2>
 
-    <div class="formulario">
+  <div class="row align-items-center">
 
-      <form 
-        id="contactForm" 
-        class="formulario" 
-        action="registro.php" 
-        method="POST"
-        style="display: flex; flex-direction: column; gap: 15px;"
-      >
+    <!-- FORMULARIO -->
+    <div class="col-md-6">
 
-        <h3>Envíanos un mensaje</h3>
+      <form id="contactForm" action="registro.php" method="POST">
 
-        <input 
-          type="text" 
-          id="nombre" 
-          name="nombre" 
-          placeholder="👤 Nombre completo" 
-          required
-          style="width: 100%;"
-        />
+        <h3 class="mb-4">Envíanos un mensaje</h3>
 
-        <input 
-          type="email" 
-          id="correo" 
-          name="correo" 
-          placeholder="📧 Correo electrónico" 
-          required
-          style="width: 100%;"
-        />
+        <div class="mb-3">
+          <input 
+            type="text" 
+            id="nombre" 
+            name="nombre" 
+            class="form-control"
+            placeholder="👤 Nombre completo" 
+            required
+          />
+        </div>
 
-        <input 
-          type="tel" 
-          id="telefono" 
-          name="telefono" 
-          placeholder="📱 Teléfono" 
-          required
-          style="width: 100%;"
-        />
+        <div class="mb-3">
+          <input 
+            type="email" 
+            id="correo" 
+            name="correo" 
+            class="form-control"
+            placeholder="📧 Correo electrónico" 
+            required
+          />
+        </div>
 
-        <textarea
-          id="mensaje"
-          name="mensaje"
-          placeholder="✍️ Escribe tu mensaje aquí..."
-          rows="5"
-          required
-          style="width: 100%;"
-        ></textarea>
+        <div class="mb-3">
+          <input 
+            type="tel" 
+            id="telefono" 
+            name="telefono" 
+            class="form-control"
+            placeholder="📱 Teléfono" 
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            class="form-control"
+            placeholder="✍️ Escribe tu mensaje aquí..."
+            rows="5"
+            required
+          ></textarea>
+        </div>
 
         <button 
           type="submit" 
           id="btnEnviar"
-          style="width: 100%;"
+          class="btn btn-dark w-100"
         >
           Enviar mensaje
         </button>
@@ -282,52 +286,75 @@
 
     </div>
 
-    <div class="chatbox">
-      <img src="imagenes/contacto.jpeg" alt="Contacto" />
+    <!-- IMAGEN -->
+    <div class="col-md-6 text-center mt-4 mt-md-0">
+
+      <img 
+        src="imagenes/contacto.jpeg" 
+        alt="Contacto"
+        class="img-fluid rounded"
+      />
+
     </div>
 
   </div>
+
 </section>
 
 <!-- REDES -->
-<section>
+<section class="container mt-5">
 
-  <h2>Redes Sociales</h2>
+  <h2 class="text-center mb-4">Redes Sociales</h2>
 
-  <div class="redes">
+  <div class="row text-center">
 
-    <div>
+    <div class="col-md-4 mb-4">
       <a 
         href="https://www.facebook.com/mashkabox/" 
         target="_blank" 
         rel="noopener noreferrer"
+        class="text-decoration-none text-dark"
       >
-        <img src="imagenes/facebook.png" alt="Facebook" width="70" />
-        <h3>Facebook</h3>
+        <img 
+          src="imagenes/facebook.png" 
+          alt="Facebook" 
+          width="70"
+        />
+        <h3 class="mt-2">Facebook</h3>
         <p>Síguenos para novedades</p>
       </a>
     </div>
 
-    <div>
+    <div class="col-md-4 mb-4">
       <a 
         href="https://www.instagram.com/mashkabox/" 
         target="_blank" 
         rel="noopener noreferrer"
+        class="text-decoration-none text-dark"
       >
-        <img src="imagenes/instagram.webp" alt="Instagram" width="70" />
-        <h3>Instagram</h3>
+        <img 
+          src="imagenes/instagram.webp" 
+          alt="Instagram" 
+          width="70"
+        />
+        <h3 class="mt-2">Instagram</h3>
         <p>Contenido y entrenamientos</p>
       </a>
     </div>
 
-    <div>
+    <div class="col-md-4 mb-4">
       <a 
         href="https://wa.me/593983421877" 
         target="_blank" 
         rel="noopener noreferrer"
+        class="text-decoration-none text-dark"
       >
-        <img src="imagenes/WhatsApp.png" alt="WhatsApp" width="70" />
-        <h3>WhatsApp</h3>
+        <img 
+          src="imagenes/WhatsApp.png" 
+          alt="WhatsApp" 
+          width="70"
+        />
+        <h3 class="mt-2">WhatsApp</h3>
         <p>Contáctanos directamente</p>
       </a>
     </div>
@@ -338,9 +365,10 @@
 
 </div>
 
-<footer>
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-4 mt-5">
 
-  <hr>
+  <hr class="bg-light">
 
   <h2>Mashka Box</h2>
 
@@ -355,6 +383,6 @@
   <p>© 2026 Todos los derechos reservados</p>
 
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
