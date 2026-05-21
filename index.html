@@ -317,50 +317,173 @@
         </div>
       </section>
 
-      <section id="contacto" class="container">
-        <h2>Contacto</h2>
-        <div class="chat">
-          <div class="formulario">
-            <form id="contactForm" class="formulario" action="registro.php" method="POST">
-              <input type="text" id="nombre" name="nombre" placeholder="Nombre" required />
-              <input type="email" id="correo" name="correo" placeholder="Correo" required />
-              <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje aquí..." rows="4"></textarea>
-              <button type="submit" id="btnEnviar">Enviar mensaje</button>
-            </form>
-          </div>
-          <div class="chatbox">
-            <img src="imagenes/contacto.jpeg" alt="Contacto" />
-          </div>
-        </div>
-      </section>
+<!-- CONTACTO -->
+<section id="contacto" class="container mt-5">
 
-      <section class="container mb-5">
-        <h2>Redes Sociales</h2>
-        <div class="redes">
-          <div>
-            <a href="https://www.facebook.com/mashkabox/" target="_blank" rel="noopener noreferrer">
-              <img src="imagenes/facebook.png" alt="Facebook" />
-              <p>Facebook</p>
-            </a>
-          </div>
-          <div>
-            <a href="https://www.instagram.com/mashkabox/" target="_blank" rel="noopener noreferrer">
-              <img src="imagenes/instagram.webp" alt="Instagram" />
-              <p>Instagram</p>
-            </a>
-          </div>
-          <div>
-            <a href="https://wa.me/523983421877" target="_blank" rel="noopener noreferrer">
-              <img src="imagenes/WhatsApp.png" alt="WhatsApp" />
-              <p>WhatsApp</p>
-            </a>
-          </div>
+  <h2 class="text-center mb-4">Contacto</h2>
+
+  <div class="row align-items-center">
+
+    <!-- FORMULARIO -->
+    <div class="col-md-6">
+
+      <form id="contactForm" action="registro.php" method="POST">
+
+        <h3 class="mb-4">Envíanos un mensaje</h3>
+
+        <div class="mb-3">
+          <input 
+            type="text" 
+            id="nombre" 
+            name="nombre" 
+            class="form-control"
+            placeholder="👤 Nombre completo" 
+            required
+          />
         </div>
-      </section>
+
+        <div class="mb-3">
+          <input 
+            type="email" 
+            id="correo" 
+            name="correo" 
+            class="form-control"
+            placeholder="📧 Correo electrónico" 
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <input 
+            type="tel" 
+            id="telefono" 
+            name="telefono" 
+            class="form-control"
+            placeholder="📱 Teléfono" 
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            class="form-control"
+            placeholder="✍️ Escribe tu mensaje aquí..."
+            rows="5"
+            required
+          ></textarea>
+        </div>
+
+        <button 
+          type="submit" 
+          id="btnEnviar"
+          class="btn btn-dark w-100"
+        >
+          Enviar mensaje
+        </button>
+
+      </form>
 
     </div>
 
-    <!-- Enlace CDN de Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- IMAGEN -->
+    <div class="col-md-6 text-center mt-4 mt-md-0">
+
+      <img 
+        src="imagenes/contacto.jpeg" 
+        alt="Contacto"
+        class="img-fluid rounded"
+      />
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- REDES -->
+<section class="container mt-5">
+
+  <h2 class="text-center mb-4">Redes Sociales</h2>
+
+  <div class="row text-center">
+
+    <div class="col-md-4 mb-4">
+      <a 
+        href="https://www.facebook.com/mashkabox/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="text-decoration-none text-dark"
+      >
+        <img 
+          src="imagenes/facebook.png" 
+          alt="Facebook" 
+          width="70"
+        />
+        <h3 class="mt-2">Facebook</h3>
+        <p>Síguenos para novedades</p>
+      </a>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <a 
+        href="https://www.instagram.com/mashkabox/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="text-decoration-none text-dark"
+      >
+        <img 
+          src="imagenes/instagram.webp" 
+          alt="Instagram" 
+          width="70"
+        />
+        <h3 class="mt-2">Instagram</h3>
+        <p>Contenido y entrenamientos</p>
+      </a>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <a 
+        href="https://wa.me/593983421877" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="text-decoration-none text-dark"
+      >
+        <img 
+          src="imagenes/WhatsApp.png" 
+          alt="WhatsApp" 
+          width="70"
+        />
+        <h3 class="mt-2">WhatsApp</h3>
+        <p>Contáctanos directamente</p>
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-4 mt-5">
+
+  <hr class="bg-light">
+
+  <h2>Mashka Box</h2>
+
+  <p><strong>Entrena fuerte. Vive mejor.</strong></p>
+
+  <p>📍 Latacunga - Ecuador</p>
+
+  <p>📞 Contacto: 0983421877</p>
+
+  <p>📧 mashkabox@gmail.com</p>
+
+  <p>© 2026 Todos los derechos reservados</p>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
