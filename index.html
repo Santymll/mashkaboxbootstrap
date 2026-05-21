@@ -68,11 +68,7 @@
         </div>
       </section>
 
-      <!-- ========================================== -->
-      <!-- YO: DESDE BENEFICIOS -->
-      <!-- ========================================== -->
-
-      <!-- 1. CARACTERÍSTICAS Y BENEFICIOS -->
+      <!-- 1. CARACTERÍSTICAS Y BENEFICIOS (Bootstrap) -->
       <section id="beneficios" class="container my-5 py-4">
         <h2 class="text-center mb-5 fw-bold text-uppercase tracking-wide">Características y beneficios</h2>
         
@@ -114,11 +110,11 @@
           </div>
         </div>
 
-        <!-- 2. GALERÍA Y VIDEO -->
+        <!-- 2. GALERÍA Y VIDEO (Bootstrap) -->
         <h2 class="text-center mb-5 fw-bold text-uppercase tracking-wide">Galería del Box</h2>
         <div class="row g-4">
           
-          <!-- Columna Izquierda: Video (Ocupa el 50% en pantallas grandes) -->
+          <!-- Columna Izquierda: Video -->
           <div class="col-12 col-lg-6">
             <div class="card h-100 shadow border-0 overflow-hidden">
               <div class="ratio ratio-16x9 h-100">
@@ -131,7 +127,8 @@
               </div>
             </div>
           </div>
-          <!-- Columna Derecha: Bloque de imágenes adaptables -->
+
+          <!-- Columna Derecha: Bloque de imágenes -->
           <div class="col-12 col-lg-6">
             <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-1 g-3 h-100">
               <div class="col">
@@ -155,7 +152,7 @@
         </div>
       </section>
 
-      <!-- 3. PLANES DE PRECIOS -->
+      <!-- 3. PLANES DE PRECIOS (Bootstrap) -->
       <section id="planes" class="container my-5 py-4">
         <h2 class="text-center mb-5 fw-bold text-uppercase tracking-wide">Nuestros Planes</h2>
         
@@ -240,7 +237,7 @@
                 <h4 class="my-0 fw-normal">Plan Semestral</h4>
               </div>
               <div class="card-body d-flex flex-column">
-                <h1 class="card-title pricing-card-title fw-bold">$150 <small class="text-muted fw-light">/mes</small></h1>
+                <h1 class="card-title pricing-card-title fw-bold">$50 <small class="text-muted fw-light">/mes</small></h1>
                 <ul class="list-unstyled mt-3 mb-4 flex-grow-1">
                   <li class="py-2 border-bottom">Compromiso a largo plazo</li>
                   <li class="py-2 border-bottom">Mejoras visibles</li>
@@ -254,30 +251,44 @@
         </div>
       </section>
 
+      <!-- 4. UBICACIÓN (NUEVO: Rediseñado completamente con Bootstrap) -->
+      <section id="ubicacion" class="container my-5 py-4">
+        <h2 class="text-center mb-5 fw-bold text-uppercase tracking-wide">Ubicación</h2>
+        
+        <div class="row g-4 align-items-stretch">
+          <!-- Columna del Mapa (Usa la clase ratio responsiva de Bootstrap) -->
+          <div class="col-12 col-md-7 col-lg-8">
+            <div class="card h-100 shadow border-0 overflow-hidden">
+              <div class="ratio ratio-21x9 h-100 shadow-sm" style="min-height: 350px;">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.65939581694573!2d-78.61176619587955!3d-0.945425716447975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d461636565889b%3A0x390a2c8fd01dcfa2!2sMashka%20Box%20Training%20Club!5e0!3m2!1sen!2sus!4v1777003490081!5m2!1sen!2sus"
+                  style="border: 0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
 
-      <!-- ========================================== -->
-      <!-- SECCIÓN COMPAÑERO 2: CONTACTO Y FOOTER     -->
-      <!-- ========================================== -->
-      <section id="ubicacion" class="ubicacion container">
-        <div class="mapa box">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.65939581694573!2d-78.61176619587955!3d-0.945425716447975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d461636565889b%3A0x390a2c8fd01dcfa2!2sMashka%20Box%20Training%20Club!5e0!3m2!1sen!2sus!4v1777003490081!5m2!1sen!2sus"
-            width="100%"
-            height="100%"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
-        </div>
-
-        <div class="info">
-          <h2>Ubicación</h2>
-          <p>📍 Av. Unidad Nacional y Manuelita Sáenz</p>
-          <p>Latacunga - Ecuador</p>
+          <!-- Columna del Panel de Información Física -->
+          <div class="col-12 col-md-5 col-lg-4">
+            <div class="card h-100 border-0 bg-dark text-white p-4 d-flex flex-column justify-content-center shadow text-center text-md-start">
+              <span class="badge bg-danger text-uppercase p-2 mb-3 align-self-center align-self-md-start">Gimnasio Oficial</span>
+              <h3 class="fw-bold mb-3 text-uppercase fs-4">¿Cómo llegar?</h3>
+              <p class="fs-5 mb-2">📍 Av. Unidad Nacional y Manuelita Sáenz</p>
+              <p class="text-light-50 fs-6">Latacunga - Ecuador</p>
+              <hr class="my-3 border-secondary">
+              <p class="small text-secondary m-0">Encuéntranos justo en la zona estratégica de la ciudad. Contamos con parqueadero seguro para todos nuestros socios afiliados.</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="container">
+
+      <!-- ========================================== -->
+      <!-- SECCIÓN COMPAREÑO 2: CONTACTO Y FOOTER     -->
+      <!-- ========================================== -->
+      <section class="container my-5">
         <h2>Horarios</h2>
         <div class="horarios">
           <h3>Lunes a Viernes</h3>
