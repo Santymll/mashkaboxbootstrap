@@ -21,7 +21,12 @@
                 <small class="text-muted d-none d-sm-block font-monospace">Entrena fuerte. Vive mejor.</small>
               </div>
               
-              <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMashka" aria-controls="navbarMashka" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler border-0 shadow-none"
+                  type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#navbarMashka" 
+                  aria-controls="navbarMashka" 
+                  aria-expanded="false" 
+                  aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               
@@ -288,32 +293,45 @@
       <!-- ========================================== -->
       <!-- SECCIÓN COMPAREÑO 2: CONTACTO Y FOOTER     -->
       <!-- ========================================== -->
-      <section class="container my-5">
-        <h2>Horarios</h2>
-        <div class="horarios">
-          <h3>Lunes a Viernes</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>Mañana</th>
-                <th>Tarde</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>05:00 - 08:00</td>
-                <td>16:00 - 20:00</td>
-              </tr>
-            </tbody>
-          </table>
-          <h3>Sábado</h3>
-          <table>
-            <tbody>
-              <tr>
-                <td>09:00</td>
-              </tr>
-            </tbody>
-          </table>
+      <section id="horarios" class="container my-5 py-4">
+        <div class="row">
+          <div class="col-12">
+            
+            <div class="card shadow border-0 overflow-hidden text-center">
+              
+              <div class="card-header bg-dark text-white py-3">
+                <h4 class="my-0 fw-bold text-uppercase tracking-wider">Horarios de Atención</h4>
+              </div>
+              
+              <div class="card-body p-4">
+                <div class="table-responsive">
+                  <table class="table table-striped table-hover align-middle w-100 m-0">
+                    <thead>
+                      <tr class="text-uppercase small text-muted tracking-wide border-bottom">
+                        <th scope="col" class="py-3 fw-bold text-start ps-4" style="width: 34%;">Días</th>
+                        <th scope="col" class="py-3 fw-bold" style="width: 33%;">Mañana</th>
+                        <th scope="col" class="py-3 fw-bold" style="width: 33%;">Tarde</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="py-3 fw-bold text-dark text-start ps-4">Lunes a Viernes</td>
+                        <td class="py-3 font-monospace text-secondary fw-semibold">05:00 - 08:00</td>
+                        <td class="py-3 font-monospace text-secondary fw-semibold">16:00 - 20:00</td>
+                      </tr>
+                      <tr>
+                        <td class="py-3 fw-bold text-dark text-start ps-4">Sábado</td>
+                        <td colspan="2" class="py-3 font-monospace text-secondary fw-semibold text-center">
+                          09:00 - 10:00 (UNICO HORARIO)
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
 
